@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+body .container {
+  display: flex;
+  width: 960px;
+  max-width: 90%;
+  margin: auto auto;
+  background-color: white;
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.61);
+}
+body .container .content {
+  padding: 50px;
+  max-width: 50%;
+}
+body .container .content .logo {
+  max-width: 300px;
+  min-width: 100px;
+  margin-bottom: 50px;
+}
+body .container .content .logo img {
+  max-width: 100%;
+}
+body .container .content .header {
+  text-transform: uppercase;
+  color: #413a3a;
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  margin: 20px 0;
+}
+body .container .content .header span {
+  font-weight: 200;
+  color: #ce9797;
+  letter-spacing: 4px;
+}
+body .container .content .text {
+  color: #ce9797;
+}
+body .container .content .text p {
+  margin-bottom: 20px;
+}
+body .container .content .text .input-group {
+  display: flex;
+}
+body .container .content .text .input-group input {
+  border-radius: 30px;
+  border-color: #ce9797;
+  color: #ce9797;
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+}
+body .container .content .text .input-group .arrow-box {
+  display: flex;
+  position: relative;
+  left: -50px;
+  justify-content: center;
+  align-items: center;
+  background: #f96262;
+  width: 70px;
+  border-radius: 20px;
+}
+body .container .content .text .input-group .arrow-box img {
+  max-width: 100%;
+}
+body .container .hero {
+  width: 50%;
+}
+body .container .hero img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 700px) {
+  body .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  body .container .content {
+    max-width: 100%;
+  }
+  body .container .content .header {
+    font-size: 1rem;
+  }
+  body .container .hero {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */

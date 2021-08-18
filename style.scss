@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+$DesaturatedRed: hsl(0, 36%, 70%);
+$SoftRed: hsl(0, 93%, 68%);
+
+$DarkGrayishRed: hsl(0, 6%, 24%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .container {
+    display: flex;
+    width: 960px;
+    max-width: 90%;
+    margin: auto auto;
+    background-color: white;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.61);
+
+    .content {
+      padding: 50px;
+      max-width: 50%;
+
+      .logo {
+        max-width: 300px;
+        min-width: 100px;
+        margin-bottom: 50px;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .header {
+        text-transform: uppercase;
+        color: $DarkGrayishRed;
+        font-size: 1.5rem;
+        letter-spacing: 6px;
+        margin: 20px 0;
+        span {
+          font-weight: 200;
+          color: $DesaturatedRed;
+          letter-spacing: 4px;
+        }
+      }
+
+      .text {
+        color: $DesaturatedRed;
+        p {
+          margin-bottom: 20px;
+        }
+
+        .input-group {
+          display: flex;
+          input {
+            border-radius: 30px;
+            border-color: $DesaturatedRed;
+            color: $DesaturatedRed;
+            font-size: 1.2rem;
+            padding: 5px 20px;
+            width: 100%;
+            max-width: 400px;
+            height: 50px;
+          }
+
+          .arrow-box {
+            display: flex;
+            position: relative;
+            left: -50px;
+            justify-content: center;
+            align-items: center;
+            background: $SoftRed;
+            width: 70px;
+            border-radius: 20px;
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .hero {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      .content {
+        max-width: 100%;
+
+        .header {
+          font-size: 1rem;
+        }
+      }
+      .hero {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution {
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
